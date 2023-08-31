@@ -1,0 +1,32 @@
+html{
+    background-color: aquamarine;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    color: blueviolet;
+}
+h2{
+    color: blue;
+}
+h3{
+    color: green;
+}
+/* nav styles */
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  }
+  

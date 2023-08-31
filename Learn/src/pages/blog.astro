@@ -1,4 +1,30 @@
-<h1>Blog Page</h1>
+---
+const name = "Blog Heading using const";
+const values ={
+    firstName :"Harry",
+    lastName:"Potter",
+    friends:["Hermioni","Ron","Snape","Jenny"],
+    flag:true
+
+}
+
+const warningColor ="red"
+---
+
+<style define:vars={{warningColor}}>
+    h1{
+        color:var(--warningColor);
+        font-size:20px;
+        font-weight: 300;
+    }
+    .flagon{
+        color:green;
+        font-size: 20px;
+        font-weight: 900;
+    }
+</style>
+
+<h1>{name}</h1>
 <ul>
     <li>
         <a href="/posts/post-1">Post 1</a>
@@ -7,3 +33,7 @@
 
     </li>
 </ul>
+
+{values.friends.map((friend)=><p>{friend}</p>)}
+
+{values?.flag ? <p class="flagon">flag is true</p>:<p>flag is false</p>}
