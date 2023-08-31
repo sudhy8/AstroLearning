@@ -1,34 +1,8 @@
 ---
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
-import Hamburger from "../components/Hamburger.astro";
+import BaseLayout from "../layouts/Layout.astro"
 
-var colorh5 ='red';
 ---
-<script>
-  document.querySelector('.hamburger').addEventListener('click',()=>{
-    alert("Clicked");
-  })
-</script>
-<style define:vars={{colorh5}}>
-  h5{
-    color:var(--colorh5)
-  }
-</style>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Astro Heading</title>
-  </head>
-  <body>
-    <Hamburger/>
-    <h1 >Astro Site test</h1>
-    <h5 >Basic H5</h5>
 
-    <Navigation/>
-    <Footer/>
-  </body>
-</html>
+<BaseLayout>
+<p>Child tag</p>
+</BaseLayout>
